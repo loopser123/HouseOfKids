@@ -1,27 +1,22 @@
 import {IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import AdSlider from "../components/AdSlider";
 
 const Home: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-            <IonMenuButton slot="start" />
-          <IonTitle>House of Kids </IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
-      </IonContent>
-    </IonPage>
-  );
+    return (
+        <IonPage>
+            <IonHeader>
+                <IonToolbar color="danger">
+                    <IonMenuButton slot="start"/>
+                    <IonTitle className="Title"> House of Kids </IonTitle>
+                </IonToolbar>
+            </IonHeader>
+            <IonContent>
+                <AdSlider/>
+            </IonContent>
+        </IonPage>
+    );
 };
 
 export default Home;
