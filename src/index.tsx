@@ -2,15 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {compose, createStore} from "redux";
-import {createRootReducer} from "./core/app.reducers";
 import {Provider} from 'react-redux';
+import {configureStore} from "./core/app.store";
 
 
-
-const composeEnhancers : typeof compose =  window.__REDUX_DEVTOOLS_EXTENSION__ || compose;
-const store = createStore(createRootReducer(),composeEnhancers());
-
+const store  = configureStore();
 
 ReactDOM.render(<Provider store={store}>
         <App/>
