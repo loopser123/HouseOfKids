@@ -1,7 +1,15 @@
-import {IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar} from '@ionic/react';
+import {
+    IonContent,
+    IonHeader,
+    IonMenuButton,
+    IonPage,
+    IonTitle,
+    IonToolbar,
+} from '@ionic/react';
 import React from 'react';
 import './Home.css';
 import AdSlider from "../components/AdSlider";
+import { ProductCard} from "../components/ProductCard";
 
 const Home: React.FC = () => {
     return (
@@ -14,6 +22,8 @@ const Home: React.FC = () => {
             </IonHeader>
             <IonContent>
                 <AdSlider/>
+                 <ProductCard/>
+                <ProductCard/>
             </IonContent>
         </IonPage>
     );
