@@ -1,5 +1,5 @@
 import {Reducer} from "redux";
-import {takeLatest, put} from 'redux-saga/effects';
+import {takeLatest} from 'redux-saga/effects';
 const LOAD_SUCCESS = 'LOAD_SUCCESS';
 export interface ProductState {
     products : [],
