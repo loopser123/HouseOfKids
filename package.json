@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^8.0.3",
+    "@types/axios": "^0.14.0",
     "@types/jest": "^24.0.25",
     "@types/node": "^12.12.24",
     "@types/react": "^16.9.34",
@@ -19,7 +20,9 @@
     "@types/redux": "^3.6.0",
     "@types/redux-devtools": "^3.0.47",
     "@types/redux-saga": "^0.10.5",
+    "axios": "^0.19.2",
     "ionicons": "^5.0.0",
+    "json-server": "^0.16.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-redux": "^7.2.0",
@@ -38,6 +41,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy" : "http://localhost:4001",
   "eslintConfig": {
     "extends": "react-app"
   },
