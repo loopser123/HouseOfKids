@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "gameBoy",
+      "description": "A game for only girls"
+    },
+    {
+      "id": 2,
+      "name": "gameBoy",
+      "description": "A game for only girls"
+    },
+    {
+      "id": 3,
+      "name": "gameBoy",
+      "description": "A game for only girls"
+    }
+  ]
+}
