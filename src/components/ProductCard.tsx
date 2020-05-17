@@ -1,23 +1,28 @@
 import {IonCard, IonCardContent, IonCol, IonGrid, IonImg, IonRow} from "@ionic/react";
 import React from "react";
 import './ProductCard.css';
-
-export const ProductCard: React.FC = () => {
+interface Props {
+    price : number;
+    name : string;
+    image ? : string;
+}
+export const ProductCard: React.FC<Props> = (props:Props) => {
+    const {price,name,image}=props;
     return (
         <IonCard className="Card">
             <IonGrid>
                 <IonRow>
                     <IonCol size="4">
                         <IonImg
-                            src="https://www.houseofkids.ma/wp-content/uploads/2019/06/TABLE-D-ACTIVITES-GUCLU-2993-300x300.jpg"/>
+                            src= { require(`../../${image}`)}/>
                     </IonCol>
                     <IonCol size="8">
                         <IonCardContent>
                             <div className="ProductTypo">
-                                TABLE D’ACTIVITES GUCLU 2993
+                                {name}
                             </div>
                             <div>
-                                <span style={{fontSize: 'large', color:'#eb445a'}}>  255 DH </span>
+                                <span style={{fontSize: 'large', color:'#eb445a'}}> {price} DH </span>
                             </div>
                         </IonCardContent>
                     </IonCol>
