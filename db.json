@@ -2,18 +2,31 @@
   "products": [
     {
       "id": 1,
-      "name": "gameBoy",
-      "description": "A game for only girls"
+      "name": "BOULIER GUCLU 3389",
+      "description": "A game for only girls",
+      "price": 85,
+      "image" : "public/images/image1.jpg"
     },
     {
       "id": 2,
-      "name": "gameBoy",
-      "description": "A game for only girls"
+      "name": "POT CHIEN GUCLU 1576",
+      "description": "A game for only girls",
+      "price": 255,
+      "image": "public/images/image2.jpg"
     },
     {
       "id": 3,
-      "name": "gameBoy",
-      "description": "A game for only girls"
+      "name": "TABLE D’ACTIVITES GUCLU 2993",
+      "description": "A game for only girls",
+      "price": 110,
+      "image" :"public/images/image3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "BROUETTE GÜCLÜ 1613",
+      "description" : "BROUETTE GÜCLÜ 1613",
+      "price" : 300,
+      "image" : "public/images/image4.jpg"
     }
   ]
 }
